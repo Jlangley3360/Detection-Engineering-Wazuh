@@ -30,7 +30,7 @@ To simulate the attack footprint, process monitoring telemetry was directed to a
   sudo tail -n 5 /var/log/malware.log
 
 Figure 1: Verification of the simulated attack telemetry containing the 'xmrig' malicious process signature.
-Phase 2: Authoring the Custom Detection Rule
+### Phase 2: Authoring the Custom Detection Rule
 
 To move past default telemetry monitoring to actionable intelligence, I configured a custom rule in the Wazuh manager's local rule set. The rule watches for specific process strings and explicitly maps the threat to MITRE ATT&CK Technique T1496 (Resource Hijacking) at a critical severity level.
 
